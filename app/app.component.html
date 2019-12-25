@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<div *ngFor="let Car of Cars">
+      <input type="checkbox" (change)="onChange(Car.id, $event.target.checked)"> {{Car.email}}<br>
+  </div>
+
+<button (click)="duplicate()" >Get values </button> 
+
+{{emailFormArray | json}}
